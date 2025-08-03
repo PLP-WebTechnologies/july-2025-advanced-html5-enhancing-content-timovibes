@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Page with Forms</title>
+  
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Enhancement Showcase</h1>
+    <p>This page demonstrates advanced HTML5 features, including semantic structure, lists, tables, embedded media, and a user-friendly form.</p>
+  </header>
+
+  <section>
+    <h2>1. Top 5 Web Development Tools</h2>
+    <ol>
+      <li>Visual Studio Code</li>
+      <li>Git & GitHub</li>
+      <li>Chrome DevTools</li>
+      <li>Figma</li>
+      <li>Postman</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>2. Weekly Study Plan</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topics</th>
+          <th>Hours</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>HTML & CSS</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>JavaScript Basics</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Project Work</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>3. Media Gallery</h2>
+    <div class="media-container">
+      <figure>
+        <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+        <figcaption>Sample Image</figcaption>
+      </figure>
+      <figure>
+        <audio controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample Audio</figcaption>
+      </figure>
+      <figure>
+        <video width="150" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample Video</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fname">First Name *</label>
+        <input type="text" id="fname" name="fname" required placeholder="John" minlength="2" />
+
+        <label for="lname">Last Name *</label>
+        <input type="text" id="lname" name="lname" required placeholder="Doe" minlength="2" />
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com" />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required placeholder="johndoe" />
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" />
+
+        <label for="confirm">Confirm Password *</label>
+        <input type="password" id="confirm" name="confirm" required minlength="6" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" name="terms" required />
+          I agree to the terms and conditions *
+        </label>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Web Dev Academy. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
